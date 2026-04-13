@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* This will also fix your H1 issue! */
+    justify-content: center;
+    align-items: center;    /* Keeps everything horizontally centered */
+    min-height: 100vh;
+    background: linear-gradient(to right, white, rgb(255, 246, 194));
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column; /* Stacks H1 on top of Container */
+    align-items: center;    /* Centers the H1 and the forms */
+    gap: 10px;              /* Space between H1 and forms */
+}
+
+.flex-table {
+  display: flex;
+  flex-direction: column; /* Stacks rows vertically */
+  width: 90%;
+  max-width: 800px;
+  background-color: white;
+  margin-left: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  padding: 20px;
+}
+
+.form-box{
+    display: none;
+}
+
+.form-box.active{
+    display: block;
+}
+
+fieldset{
+    border:none;
+}
+
+.flex-row {
+  display: flex; /* Aligns cells horizontally */
+  flex-direction: row; 
+
+}
+
+.flex-cell {
+  flex: 1; /* Makes cells grow to fill the row */
+  padding: 10px;
+
+}
+
+.container{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+legend{
+    font-weight: 1000;
+    margin-left: 100px;
+    display: flex;
+}
+
+h1{
+    color: white;
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+
+span{
+    color: red;
+    gap: 1px;
+}
